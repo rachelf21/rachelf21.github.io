@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Say No to Germs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="styles_gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./index.html"> Home</a>
+        <a href="./flu.html"> Influenza</a>
+        <a href="./cold.html"> Common Cold</a>
+        <a href="./Coronavirus.html"> Coronavirus</a>
+        <a href="./prevention.html"> Prevention</a>
+        <a class="active" href="./posters.html"> Free Posters </a>
+        <a href="./about.html"> About </a>
+        <a href="./contact.html"> Contact Us </a>
+
+    </div>
+
+    <div class="middle">
+        <span class="heading"> Free Posters</span>
+
+
+
+
+        <div class="container">
+
+            <div class="row">
+                <div class="column">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                        </div>
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 6</div>
+                            <a href="./fight flu.jpg" target="_blank"><img src="fight flu.jpg" style="width:90%"></a>
+                            <div class="text">Fight the Flu</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 6</div>
+                            <a href="./flu infographic.png" target="_blank"><img src="flu infographic.png"
+                                    style="width:90%"></a>
+                            <div class="text">Flu Infographic</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 6</div>
+                            <a href="./free flu shot.png" target="_blank"><img src="free flu shot.png"
+                                    style="width:90%"></a>
+                            <div class="text">Free Flu Shot</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 6</div>
+                            <a href="./hands clean.jpg" target="_blank"><img src="hands clean.jpg" style="width:90%"></a>
+                            <div class="text">Fight the Flu</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 6</div>
+                            <a href="./stop germs.jpg" target="_blank"><img src="stop germs.jpg"
+                                    style="width:90%"></a>
+                            <div class="text">Flu Infographic</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 6</div>
+                            <a href="./hands washing.jpg" target="_blank"><img src="hands washing.jpg"
+                                    style="width:90%"></a>
+                            <div class="text">Free Flu Shot</div>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" placeholder="Your email address..">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="disease">Disease</label>
+                        <select id="disease" name="Disease">
+                            <option value="none">--Select from list--</option>
+                            <option value="flu">Influenza</option>
+                            <option value="cold">Common Cold</option>
+                            <option value="coronavirus">Coronavirus</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="none">--Select from list--</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="china">China</option>
+                            <option value="hongkong">Hong Kong</option>
+                            <option value="japan">Japan</option>
+                            <option value="unitedkingdom">United Kingdom</option>
+                            <option value="usa">USA</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="How can we help you?"
+                            style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </div>
+</body>
+
+</html>
+
+<!---Shift Alt F to autoformat.
+Ctrl k v to view live preview
+Ctrl k s to save all -->
